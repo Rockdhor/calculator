@@ -31,6 +31,9 @@ const handleOperator = (e) => {
         case "AC":
             storage = 0, operator = null, display.textContent = 0;
             break;
+        case "DEL":
+            display.textContent = display.textContent.length <= 1 ? 0 : display.textContent.substr(0, display.textContent.length -1)
+            break;
         case "+/-":
             if (display.textContent == 0) return
             display.textContent = display.textContent.includes("-") ? display.textContent.substr(1,display.textContent.length) : "-" + display.textContent;

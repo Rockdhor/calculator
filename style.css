@@ -44,7 +44,7 @@ h1 {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 
-    "ac ac sign division"
+    "ac del sign division"
     "seven eight nine times"
     "four five six minus"
     "one two three plus"
@@ -74,6 +74,10 @@ h1 {
 
 #ac {
     grid-area: ac;
+    background-color: #AA471F;
+}
+#del {
+    grid-area: del;
     background-color: #AA471F;
 }
 
